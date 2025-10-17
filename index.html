@@ -3,563 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Limpieza Ecológica de Terrenos con exceso de hierba / Patios / Exteriores/ de manera ecologica con Ovejas</title>
-    <meta name="description" content="Limpieza de terrenos de maleza y hierba con ovejas, una alternativa ecológica y efectiva. Transformamos terrenos enmontados de forma natural y sostenible.">
-    <meta name="keywords" content="limpieza de terrenos, ovejas, limpieza ecológica, control de maleza, Tijuana, Baja California, México, sostenible, agricultura">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>El Uso de las TIC en la Vida Cotidiana</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #f4f4f9;
+            color: #333;
         }
-        .navbar {
-            background-color: #28a745; /* Verde */
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #0056b3;
             color: white;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 8px;
         }
-        .navbar-brand, .navbar-nav .nav-link {
-            color: white !important;
-        }
-        .jumbotron {
-            background-color: #e9ecef;
-            padding: 2rem 1rem; /* Ajustado para el carrusel */
+        nav {
+            background: #333;
+            padding: 0.5rem;
+            border-radius: 8px;
+            margin: 20px 0;
             text-align: center;
         }
-        /* Estilos para el carrusel dentro del jumbotron */
-        #bannerCarousel .carousel-inner img {
-            max-height: 450px; /* Ajusta la altura máxima del banner */
-            object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
-            width: 100%;
-        }
-        .jumbotron-text {
-            margin-top: 2rem; /* Espacio entre carrusel y texto */
-        }
-        .jumbotron-text h1 {
-             font-size: 2.5rem;
-         }
-
-        .portfolio-item {
-            margin-bottom: 2rem;
-        }
-        .portfolio-item img {
-            width: 100%;
-            height: auto;
-            border-radius: 0.5rem;
-            margin-bottom: 0.5rem; /* Espacio entre fotos antes/después */
-        }
-        .contact-form {
-            background-color: white;
-            padding: 20px;
-            border-radius: 0.5rem;
-            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-        }
-        .footer {
-            background-color: #343a40;
+        nav a {
             color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        .whatsapp-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-        }
-        .whatsapp-button a {
-            background-color: #25d366;
-            color: white;
-            border-radius: 50%;
-            padding: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
+            padding: 10px 20px;
             text-decoration: none;
+            display: inline-block;
         }
-        .admin-panel {
-            display: none; /* Oculto por defecto */
-            background-color: #f0f0f0;
+        nav a:hover {
+            background: #555;
+            border-radius: 4px;
+        }
+        section {
+            background: white;
+            margin-bottom: 20px;
             padding: 20px;
-            border: 1px solid #ccc;
-            margin-top: 20px;
-            border-radius: 0.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        .admin-panel h3 {
-            margin-top: 1.5rem;
-            margin-bottom: 1rem;
-            border-top: 1px solid #ccc;
-            padding-top: 1rem;
+        h2 {
+            color: #0056b3;
+            border-bottom: 2px solid #f4f4f9;
+            padding-bottom: 10px;
         }
-        .admin-panel label {
-            font-weight: bold;
-        }
-        .admin-list-item {
+        .media-container {
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            padding: 5px 0;
-            border-bottom: 1px dashed #ddd;
+            align-items: flex-start;
+            gap: 20px;
+            margin-top: 20px;
         }
-        .admin-list-item img {
-            max-width: 50px; /* Miniatura en el admin */
-            margin-right: 10px;
+        .left-column {
+            width: 48%;
         }
-        .admin-list-item button {
-            margin-left: 10px;
+        .right-column {
+            width: 48%;
         }
-        .admin-tabs {
-            margin-bottom: 1rem;
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
         }
-
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
+        }
     </style>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <p style="font-size: 1em; font-weight: normal; opacity: 0.9; margin: 0;">Actividad integradora 6. Crear un recurso multimedia</p>
+            <h1 style="margin-top: 0.5rem;">El Uso de las TIC en la Vida Cotidiana</h1>
+        </header>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Limpieza Ecológica con Ovejas</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portafolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="mostrarPanelAdmin(); return false;">Administrar</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+        <nav>
+            <a href="#casa">Casa</a>
+            <a href="#educativo">Educación</a>
+            <a href="#laboral">Laboral</a>
+        </nav>
 
-    <!-- Jumbotron con Carrusel -->
-    <div class="jumbotron">
-        <div class="container">
-            <!-- Carrusel -->
-            <div id="bannerCarousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators" id="banner-indicators">
-                    <!-- Indicadores se generan dinámicamente -->
-                </ol>
-                <div class="carousel-inner" id="banner-inner">
-                    <!-- Imágenes del carrusel se generan dinámicamente -->
+        <section id="casa">
+            <h2>Las TIC en la Casa</h2>
+            <div class="media-container">
+                <div class="left-column">
+                    <p>En el hogar, las TIC son fundamentales para la comunicación, el ocio y la gestión diaria. Utilizamos smartphones y computadoras para realizar videollamadas, acceder a redes sociales y correo electrónico. El entretenimiento ha sido transformado por servicios de streaming como Netflix, plataformas de música como Spotify y videojuegos en línea. Además, la domótica permite controlar luces y electrodomésticos de forma remota, mientras que la banca en línea y las compras por internet simplifican la administración de nuestras finanzas y necesidades.<br><br><strong>Fuente:</strong> (2016). <em>Uso de las TIC en el hogar: Entre el entretenimiento y el aprendizaje informal</em>. ResearchGate. https://www.researchgate.net/publication/304400328_Uso_de_las_TIC_en_el_hogar_Entre_el_entretenimiento_y_el_aprendizaje_informal</p>
                 </div>
-                <a class="carousel-control-prev" href="#bannerCarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#bannerCarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                <div class="right-column">
+                    <svg style="display: block; margin: 0 auto 10px auto; width: 48px; height: 48px; color: #C13B1B;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M4 3h16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm4 8v4h8v-4H8zm2-2h4v1H10V9z"/></svg>
+                    <a href="https://docs.google.com/presentation/d/1vMcvdnA-jrMCDGa888LE_Mu-s8RSLuO9/edit?usp=sharing&ouid=117562809748114935220&rtpof=true&sd=true" target="_blank" style="display:block; text-align:center; margin-bottom:10px;">Presentacion PowerPoint</a>
+                    <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/2I2zT1-pA4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <a href="https://www.youtube.com/watch?v=2I2zT1-pA4o" target="_blank" style="display:block; text-align:center; margin-top:10px; font-size: 0.8em;">Ver video en YouTube</a>
+                </div>
             </div>
-            <!-- Texto debajo del carrusel -->
-            <div class="jumbotron-text">
-                <h1 class="display-4">Transforma tus Terrenos de Forma Natural</h1>
-                <p class="lead">Limpieza ecológica de terrenos con ovejas. Una alternativa sostenible, eficiente y amigable con el medio ambiente. Eliminamos maleza y hierba de forma natural.</p>
-                <hr class="my-4">
-                <p>¡Contáctanos para una cotización!</p>
+        </section>
+
+        <section id="educativo">
+            <h2>Las TIC en el Ámbito Educativo</h2>
+            <div class="media-container">
+                <div class="left-column">
+                    <p>La educación se ha enriquecido enormemente con las TIC. Las plataformas de aprendizaje en línea (LMS) como Google Classroom gestionan cursos y materiales. Recursos como videos, simulaciones y libros electrónicos ofrecen nuevas formas de aprender. Las herramientas colaborativas como Google Docs permiten a los estudiantes trabajar en equipo sin importar la distancia. La realidad virtual y la programación están abriendo puertas a experiencias de aprendizaje inmersivas y al desarrollo de habilidades para el futuro.<br><br><strong>Fuente:</strong> (s.f.). <em>Las Tic en la educación superior, innovaciones y retos</em>. Universidad de La Rioja. https://www.unirioja.es/servicios/sp/ej/contextos/pdf/33/02.pdf</p>
+                </div>
+                <div class="right-column">
+                    <svg style="display: block; margin: 0 auto 10px auto; width: 48px; height: 48px; color: #C13B1B;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M4 3h16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm4 8v4h8v-4H8zm2-2h4v1H10V9z"/></svg>
+                    <a href="https://docs.google.com/presentation/d/1vMcvdnA-jrMCDGa888LE_Mu-s8RSLuO9/edit?usp=sharing&ouid=117562809748114935220&rtpof=true&sd=true" target="_blank" style="display:block; text-align:center; margin-bottom:10px;">Presentacion PowerPoint</a>
+                    <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/vET09Qmt3Nk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <a href="https://www.youtube.com/watch?v=vET09Qmt3Nk" target="_blank" style="display:block; text-align:center; margin-top:10px; font-size: 0.8em;">Ver video en YouTube</a>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <section id="laboral">
+            <h2>Las TIC en el Ámbito Laboral</h2>
+            <div class="media-container">
+                <div class="left-column">
+                    <p>En el trabajo, las TIC son esenciales para la productividad y la colaboración. Herramientas como Slack, Microsoft Teams y Zoom facilitan la comunicación instantánea y las reuniones a distancia, eliminando barreras geográficas. La gestión de proyectos se optimiza con plataformas como Jira o Trello, y los sistemas CRM y ERP permiten administrar la relación con clientes y los recursos de la empresa de manera integrada. El teletrabajo, impulsado por estas tecnologías, se ha consolidado como una modalidad laboral flexible y eficiente.<br><br><strong>Fuente:</strong> García García, C. (s.f.). <em>El impacto de las nuevas tecnologías en el empleo</em>. Repositorio Comillas. https://repositorio.comillas.edu/xmlui/bitstream/handle/11531/26777/TFG%20-%20Garc%C3%ADa%20Garc%C3%ADa%2C%20Cristina.pdf?sequence=1</p>
+                </div>
+                <div class="right-column">
+                    <svg style="display: block; margin: 0 auto 10px auto; width: 48px; height: 48px; color: #C13B1B;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M4 3h16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm4 8v4h8v-4H8zm2-2h4v1H10V9z"/></svg>
+                    <a href="https://docs.google.com/presentation/d/1vMcvdnA-jrMCDGa888LE_Mu-s8RSLuO9/edit?usp=sharing&ouid=117562809748114935220&rtpof=true&sd=true" target="_blank" style="display:block; text-align:center; margin-bottom:10px;">Presentacion PowerPoint</a>
+                    <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/b-838sV8S2s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <a href="https://www.youtube.com/watch?v=b-838sV8S2s" target="_blank" style="display:block; text-align:center; margin-top:10px; font-size: 0.8em;">Ver video en YouTube</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="multimedia">
+            <h2>Video Explicativo</h2>
+            <p>Para complementar la información, este video ofrece una excelente introducción sobre qué son las TIC y la importancia que tienen en la actualidad.</p>
+            <div class="video-wrapper">
+                <iframe src="https://youtu.be/Xsq_zU6SM5Y?si=y2IKqqBMnAyApQSL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <footer>
+            <p>Juan Ricardo Fajardo Magaña
+Grupo: M1C1G80-121</p>
+        </footer>
     </div>
-
-    <!-- Sección de Portafolio -->
-    <section id="portfolio" class="container">
-        <h2>Portafolio de Trabajos Realizados</h2>
-        <p>Mira cómo nuestras ovejas transforman los terrenos:</p>
-        <div class="row" id="portfolio-items">
-            <!-- Los elementos del portafolio se cargarán aquí -->
-        </div>
-    </section>
-
-    <!-- Sección de Contacto -->
-    <section id="contacto" class="container mt-5 mb-5">
-        <h2>Contáctanos</h2>
-        <div class="row">
-            <div class="col-md-8 offset-md-2 contact-form">
-                <p>¿Interesado en nuestros servicios? Completa el siguiente formulario o envíanos un WhatsApp.</p>
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" class="form-control" id="nombre" name="nombre" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Correo Electrónico:</label>
-                        <input type="email" class="form-control" id="email" name="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="telefono">Teléfono:</label>
-                        <input type="tel" class="form-control" id="telefono" name="telefono">
-                    </div>
-                    <div class="form-group">
-                        <label for="mensaje">Mensaje (describe brevemente tu terreno):</label>
-                        <textarea class="form-control" id="mensaje" name="mensaje" rows="3" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-success">Enviar Mensaje por WhatsApp</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Botón de WhatsApp -->
-    <div class="whatsapp-button">
-        <a href="https://wa.me/526643138029" target="_blank"><i class="fab fa-whatsapp"></i></a>
-    </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>© <span id="currentYear"></span> Limpieza Ecológica con Ovejas. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-
-    <!-- Panel de Administración (Inicialmente oculto) -->
-    <div class="container admin-panel" id="adminPanel">
-        <h2>Panel de Administración</h2>
-        <p class="text-muted small">Nota: Los cambios se guardan localmente en tu navegador usando localStorage. No son permanentes en el servidor.</p>
-
-        <!-- Pestañas de Administración -->
-        <ul class="nav nav-tabs admin-tabs" id="adminTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <a class="nav-link active" id="banner-tab" data-toggle="tab" href="#admin-banner" role="tab" aria-controls="admin-banner" aria-selected="true">Administrar Banner</a>
-          </li>
-          <li class="nav-item" role="presentation">
-            <a class="nav-link" id="portfolio-tab" data-toggle="tab" href="#admin-portfolio" role="tab" aria-controls="admin-portfolio" aria-selected="false">Administrar Portafolio</a>
-          </li>
-        </ul>
-
-        <div class="tab-content" id="adminTabContent">
-            <!-- Pestaña Administración Banner -->
-            <div class="tab-pane fade show active" id="admin-banner" role="tabpanel" aria-labelledby="banner-tab">
-                <h3>Gestionar Imágenes del Banner Principal</h3>
-                <form id="adminBannerForm">
-                    <div class="form-group">
-                        <label for="bannerImagenURL">URL de la Nueva Imagen del Banner:</label>
-                        <input type="url" class="form-control" id="bannerImagenURL" placeholder="https://ejemplo.com/imagen.jpg" required>
-                         <small class="form-text text-muted">Pega la URL completa de la imagen que deseas agregar.</small>
-                    </div>
-                    <button type="button" class="btn btn-primary" onclick="agregarImagenBanner()">Agregar Imagen al Banner</button>
-                </form>
-                <hr>
-                <h4>Imágenes Actuales del Banner:</h4>
-                <ul class="list-unstyled" id="adminBannerList">
-                    <!-- Lista de imágenes del banner para borrar -->
-                </ul>
-            </div>
-
-            <!-- Pestaña Administración Portafolio -->
-            <div class="tab-pane fade" id="admin-portfolio" role="tabpanel" aria-labelledby="portfolio-tab">
-                 <h3>Agregar Nuevo Trabajo al Portafolio</h3>
-                <form id="adminPortfolioForm">
-                    <div class="form-group">
-                        <label for="portfolioImagenAntes">Imagen Antes (URL):</label>
-                        <input type="url" class="form-control" id="portfolioImagenAntes" placeholder="https://ejemplo.com/antes.jpg" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="portfolioImagenDespues">Imagen Después (URL):</label>
-                        <input type="url" class="form-control" id="portfolioImagenDespues" placeholder="https://ejemplo.com/despues.jpg" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="portfolioDescripcion">Descripción:</label>
-                        <textarea class="form-control" id="portfolioDescripcion" rows="2" required></textarea>
-                    </div>
-                    <button type="button" class="btn btn-primary" onclick="agregarTrabajoPortafolio()">Agregar Trabajo</button>
-                </form>
-                 <hr>
-                <h4>Trabajos Actuales del Portafolio:</h4>
-                 <ul class="list-unstyled" id="adminPortfolioList">
-                    <!-- Lista de trabajos del portafolio para borrar -->
-                </ul>
-            </div>
-        </div>
-
-
-        <button type="button" class="btn btn-secondary mt-3" onclick="ocultarPanelAdmin()">Cerrar Panel</button>
-    </div>
-    <!-- Botón para abrir el panel (opcional, ya está en el menú) -->
-    <!-- <button type="button" class="btn btn-info" onclick="mostrarPanelAdmin()">Administrar Contenido</button> -->
-
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        // --- Datos Iniciales (serán sobrescritos por localStorage si existe) ---
-        let bannerImages = [
-            { src: 'https://file.garden/Z8NltLNFC1q_3W8R/Terreno1.jpg', alt: 'Limpieza de patio exterior' },
-            { src: 'https://file.garden/Z8NltLNFC1q_3W8R/terreno2.jpg', alt: 'Terreno antes de la limpieza' },
-            { src: 'https://file.garden/Z8NltLNFC1q_3W8R/terreno4.jpg', alt: 'Terreno después de la limpieza' },
-            { src: 'https://file.garden/Z8NltLNFC1q_3W8R/ovejaspastando.jpg', alt: 'Ovejas en el terreno' }
-        ];
-
-        let portfolioTrabajos = [
-             {
-                id: 'trabajo1', // ID único para cada trabajo
-                antes: 'https://file.garden/Z8NltLNFC1q_3W8R/Antes1.jpg',
-                despues: 'https://file.garden/Z8NltLNFC1q_3W8R/despues1.jpg',
-                descripcion: 'Limpieza de patio residencial con alta densidad de maleza.'
-            },
-            {
-                id: 'trabajo2',
-                antes: 'https://file.garden/Z8NltLNFC1q_3W8R/Antes2.jpg',
-                despues: 'https://file.garden/Z8NltLNFC1q_3W8R/Despues2.jpg',
-                descripcion: 'Limpieza de terreno baldio bardeado, Col. Rancho la cima.'
-            }
-        ];
-
-        // --- Funciones de Carga y Guardado en LocalStorage ---
-        function guardarDatos() {
-            localStorage.setItem('bannerImagesData', JSON.stringify(bannerImages));
-            localStorage.setItem('portfolioTrabajosData', JSON.stringify(portfolioTrabajos));
-            console.log("Datos guardados en localStorage.");
-        }
-
-        function cargarDatos() {
-            const storedBannerImages = localStorage.getItem('bannerImagesData');
-            const storedPortfolioTrabajos = localStorage.getItem('portfolioTrabajosData');
-
-            if (storedBannerImages) {
-                bannerImages = JSON.parse(storedBannerImages);
-                console.log("Imágenes del banner cargadas desde localStorage.");
-            } else {
-                console.log("Usando imágenes del banner por defecto.");
-            }
-
-            if (storedPortfolioTrabajos) {
-                portfolioTrabajos = JSON.parse(storedPortfolioTrabajos);
-                 console.log("Trabajos del portafolio cargados desde localStorage.");
-            } else {
-                 console.log("Usando trabajos del portafolio por defecto.");
-            }
-        }
-
-        // --- Funciones para Generar Contenido Dinámico ---
-        function generarBannerCarousel() {
-            const indicatorsContainer = document.getElementById('banner-indicators');
-            const innerContainer = document.getElementById('banner-inner');
-            indicatorsContainer.innerHTML = ''; // Limpiar indicadores
-            innerContainer.innerHTML = ''; // Limpiar slides
-
-            bannerImages.forEach((img, index) => {
-                // Crear Indicador
-                const indicator = document.createElement('li');
-                indicator.setAttribute('data-target', '#bannerCarousel');
-                indicator.setAttribute('data-slide-to', index.toString());
-                if (index === 0) {
-                    indicator.className = 'active';
-                }
-                indicatorsContainer.appendChild(indicator);
-
-                // Crear Slide
-                const slide = document.createElement('div');
-                slide.className = 'carousel-item' + (index === 0 ? ' active' : '');
-                const image = document.createElement('img');
-                image.className = 'd-block w-100';
-                image.src = img.src;
-                image.alt = img.alt || `Banner Image ${index + 1}`; // Alt text por defecto
-                slide.appendChild(image);
-                innerContainer.appendChild(slide);
-            });
-
-             // Reiniciar el carrusel si ya estaba inicializado (para que tome los cambios)
-            $('#bannerCarousel').carousel('dispose');
-            $('#bannerCarousel').carousel();
-        }
-
-        function generarPortfolio() {
-            const portfolioContainer = document.getElementById('portfolio-items');
-            portfolioContainer.innerHTML = ''; // Limpiar portafolio
-
-            if (portfolioTrabajos.length === 0) {
-                 portfolioContainer.innerHTML = '<p class="col-12 text-center">Aún no hay trabajos en el portafolio.</p>';
-                 return;
-            }
-
-            portfolioTrabajos.forEach(trabajo => {
-                const itemHTML = `
-                    <div class="col-md-6 portfolio-item" id="${trabajo.id}">
-                        <div class="row">
-                            <div class="col-6">
-                                <img src="${trabajo.antes}" alt="Antes - ${trabajo.descripcion}">
-                                <p class="text-center small">Antes</p>
-                            </div>
-                            <div class="col-6">
-                                <img src="${trabajo.despues}" alt="Después - ${trabajo.descripcion}">
-                                 <p class="text-center small">Después</p>
-                            </div>
-                        </div>
-                         <p class="mt-2">${trabajo.descripcion}</p>
-                    </div>
-                `;
-                portfolioContainer.insertAdjacentHTML('beforeend', itemHTML);
-            });
-        }
-
-        // --- Funciones del Panel de Administración ---
-        function mostrarPanelAdmin() {
-            actualizarListasAdmin(); // Actualizar listas antes de mostrar
-            document.getElementById('adminPanel').style.display = 'block';
-        }
-
-        function ocultarPanelAdmin() {
-            document.getElementById('adminPanel').style.display = 'none';
-        }
-
-        function actualizarListasAdmin() {
-            // Actualizar lista de banner
-            const bannerList = document.getElementById('adminBannerList');
-            bannerList.innerHTML = '';
-            bannerImages.forEach((img, index) => {
-                const listItem = document.createElement('li');
-                listItem.className = 'admin-list-item';
-                listItem.innerHTML = `
-                    <span><img src="${img.src}" alt="Miniatura" class="img-thumbnail mr-2"> ${img.src.substring(0, 50)}...</span>
-                    <button class="btn btn-danger btn-sm" onclick="borrarImagenBanner(${index})">Borrar</button>
-                `;
-                bannerList.appendChild(listItem);
-            });
-             if (bannerImages.length === 0) bannerList.innerHTML = '<li>No hay imágenes en el banner.</li>';
-
-            // Actualizar lista de portafolio
-             const portfolioList = document.getElementById('adminPortfolioList');
-             portfolioList.innerHTML = '';
-             portfolioTrabajos.forEach((trabajo, index) => {
-                 const listItem = document.createElement('li');
-                 listItem.className = 'admin-list-item';
-                 listItem.innerHTML = `
-                    <span>
-                        <img src="${trabajo.antes}" alt="Mini Antes" class="img-thumbnail mr-1">
-                        <img src="${trabajo.despues}" alt="Mini Despues" class="img-thumbnail mr-2">
-                        ${trabajo.descripcion.substring(0, 40)}...
-                    </span>
-                    <button class="btn btn-danger btn-sm" onclick="borrarTrabajoPortafolio(${index})">Borrar</button>
-                 `;
-                 portfolioList.appendChild(listItem);
-             });
-             if (portfolioTrabajos.length === 0) portfolioList.innerHTML = '<li>No hay trabajos en el portafolio.</li>';
-        }
-
-        // Funciones para Agregar
-        function agregarImagenBanner() {
-            const imagenURL = document.getElementById('bannerImagenURL').value.trim();
-            if (!imagenURL) {
-                alert("Por favor, ingresa la URL de la imagen.");
-                return;
-            }
-             try { // Validar si es una URL válida (básico)
-                new URL(imagenURL);
-            } catch (_) {
-                alert("Por favor, ingresa una URL válida (ej: https://...).");
-                return;
-            }
-
-            bannerImages.push({ src: imagenURL, alt: 'Nueva imagen del banner' });
-            guardarDatos();
-            generarBannerCarousel();
-            actualizarListasAdmin(); // Actualizar lista en admin
-            document.getElementById('bannerImagenURL').value = ''; // Limpiar campo
-             alert('Imagen agregada al banner.');
-        }
-
-        function agregarTrabajoPortafolio() {
-            const imagenAntesURL = document.getElementById('portfolioImagenAntes').value.trim();
-            const imagenDespuesURL = document.getElementById('portfolioImagenDespues').value.trim();
-            const descripcion = document.getElementById('portfolioDescripcion').value.trim();
-
-            if (!imagenAntesURL || !imagenDespuesURL || !descripcion) {
-                alert("Por favor, completa todos los campos del portafolio.");
-                return;
-            }
-             try { // Validar URLs
-                new URL(imagenAntesURL);
-                new URL(imagenDespuesURL);
-            } catch (_) {
-                alert("Por favor, ingresa URLs válidas para las imágenes.");
-                return;
-            }
-
-            const nuevoTrabajo = {
-                id: 'trabajo' + Date.now(), // ID único simple
-                antes: imagenAntesURL,
-                despues: imagenDespuesURL,
-                descripcion: descripcion
-            };
-
-            portfolioTrabajos.push(nuevoTrabajo);
-            guardarDatos();
-            generarPortfolio();
-            actualizarListasAdmin(); // Actualizar lista en admin
-
-            // Limpiar los campos del formulario
-            document.getElementById('adminPortfolioForm').reset();
-            alert('Trabajo agregado al portafolio.');
-        }
-
-        // Funciones para Borrar
-        function borrarImagenBanner(index) {
-             if (confirm(`¿Estás seguro de que quieres borrar esta imagen del banner?\n${bannerImages[index].src.substring(0,50)}...`)) {
-                bannerImages.splice(index, 1); // Elimina 1 elemento en el índice 'index'
-                guardarDatos();
-                generarBannerCarousel();
-                actualizarListasAdmin();
-                alert('Imagen del banner borrada.');
-            }
-        }
-
-         function borrarTrabajoPortafolio(index) {
-            if (confirm(`¿Estás seguro de que quieres borrar este trabajo del portafolio?\n${portfolioTrabajos[index].descripcion.substring(0,50)}...`)) {
-                portfolioTrabajos.splice(index, 1);
-                guardarDatos();
-                generarPortfolio();
-                actualizarListasAdmin();
-                alert('Trabajo del portafolio borrado.');
-            }
-        }
-
-
-        // --- Inicialización al Cargar la Página ---
-        document.addEventListener('DOMContentLoaded', function() {
-            cargarDatos(); // Cargar datos desde localStorage (o usar defaults)
-            generarBannerCarousel(); // Generar el carrusel inicial
-            generarPortfolio(); // Generar el portafolio inicial
-
-             // Actualizar año en el footer
-            document.getElementById('currentYear').textContent = new Date().getFullYear();
-        });
-
-        // --- Formulario de Contacto ---
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Evitar la recarga de la página
-
-            const nombre = document.getElementById('nombre').value;
-            const email = document.getElementById('email').value;
-            const telefono = document.getElementById('telefono').value;
-            const mensaje = document.getElementById('mensaje').value;
-
-            let whatsappText = `¡Hola! Me gustaría obtener más información sobre sus servicios de limpieza con ovejas.\n\n`;
-            if (nombre) whatsappText += `Nombre: ${nombre}\n`;
-            if (email) whatsappText += `Correo: ${email}\n`;
-            if (telefono) whatsappText += `Teléfono: ${telefono}\n`;
-            if (mensaje) whatsappText += `Mensaje: ${mensaje}\n`;
-            whatsappText += `\nEnviado desde el sitio web.`;
-
-            const whatsappLink = `https://wa.me/526643138029?text=${encodeURIComponent(whatsappText)}`;
-
-            window.open(whatsappLink, '_blank');
-
-            // Opcional: Limpiar el formulario
-            // document.getElementById('contactForm').reset();
-            // alert('Serás redirigido a WhatsApp para enviar tu mensaje.');
-        });
-
-    </script>
 </body>
 </html>
